@@ -15,5 +15,5 @@ do
   mkdir -p ${output_path}
   num1=00 # files-
   num2=39 # range
-  sbatch --array=${num1}-${num2} xml_slurm ${input_path} ${output_path} 
+  sbatch --array=${num1}-${num2} extract_metadata.sh ${input_path} ${output_path} 
 done
