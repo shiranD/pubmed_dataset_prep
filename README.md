@@ -3,11 +3,11 @@ This repo extract punned xml's data process and prepares them for folds to run y
 
 The follwoing steps take place:
 
-## Data Extraction
+## Data Extraction (found under extraction folder)
 1. extract the required fields of the xml (title, abstract, body)
 2. retrieve the text of the given fields
 
-## Data Processing
+## Data Processing (found under processing folder)
 1. Text segmentation
 2. POS addition (optional)
 3. Text shuffling
