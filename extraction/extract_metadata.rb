@@ -1,7 +1,7 @@
 require 'nokogiri'
 require 'json'
 
-# Writen by Steven Bedric and modified by Shiran Dudy
+# Writen by Steven Bedrick and modified by Shiran Dudy
 # shirdu2@gmail.com
 
 def process_article(art)
