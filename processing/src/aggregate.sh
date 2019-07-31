@@ -14,4 +14,4 @@ echo "SLURM_ARRAY_JOB_ID: $SLURM_ARRAY_JOB_ID"
 
 input_path=$1
 output_path=$2
-cat ${input_path}/* > ${input_path}/${output_path}
+cat ${input_path}/txt/*.txt > ${input_path}/${output_path}

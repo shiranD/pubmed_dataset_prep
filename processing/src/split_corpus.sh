@@ -18,7 +18,7 @@ corpusname=$3
 
 split -l 100000 -d -a 6 ${path2txt} ${start_corpus}/${corpusname}_
 i=0
-for FILE in `ls ${}/`
+for FILE in `ls ${start_corpus}/`
  do
  mv ${start_corpus}/$FILE ${start_corpus}/${corpusname}_$i
  let i=i+1
