@@ -2,9 +2,8 @@
 set -x
 set -e
 
-path2json=json
-path2txt=txt
-mkdir -p ${path2json}
+path2json=../json # assuming xml_parse.sh provided output to this dir
+path2txt=../txt
 mkdir -p ${path2txt}
 end=3
 
@@ -16,5 +15,5 @@ do
   mkdir -p ${output_path}
   num1=00
   num2=39
-  sbatch --array=${num1}-${num2} json2txt.sh ${input_path} ${output_path} ${folder} 
+  sbatch --array=${num1}-${num2} json2text.sh ${input_path} ${output_path} ${folder} 
 done
