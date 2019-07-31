@@ -1,4 +1,3 @@
-#!/g/steven/.rvm/rubies/ruby-1.9.2-p180/bin/ruby
 require 'nokogiri'
 require 'json'
 
