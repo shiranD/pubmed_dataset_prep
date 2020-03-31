@@ -16,4 +16,4 @@ echo "SLURM_ARRAY_JOB_ID: $SLURM_ARRAY_JOB_ID"
 path2corpus=$1
 new_corpus=$2
 srcdir=$3
-python3 ${srcdir}/rm_refs.py --fdata ${path2corpus}_$SLURM_ARRAY_TASK_ID --fout ${new_corpus}_${SLURM_ARRAY_TASK_ID}
+python3 ${srcdir}/no_ref.py --fdata ${path2corpus}_$SLURM_ARRAY_TASK_ID --fout ${new_corpus}_${SLURM_ARRAY_TASK_ID}
