@@ -31,17 +31,9 @@ mkdir -p ${sets}
 mkdir -p ${seg_corpus}
 mkdir -p ${shuffle}
 
-## After splitting corpus, run commands (ZEROTH,FIRST,..) line by line to ensure every cmd is completed successfuly
+## run commands (ZEROTH,FIRST,..) line by line to ensure every cmd is completed successfuly, read comments
 
 echo "PROCESS DATA"
-## split corpus
-split -l 100000 -d -a 6 ${path2corpus} ${start_corpus}/${corpusname}_
-i=0
-for FILE in `ls ${start_corpus}/`
- do
- mv ${start_corpus}/$FILE ${start_corpus}/${corpusname}_$i
- let i=i+1
-done
 
 # count number of shards
 num=$(ls -l ${dataf}/corpus | grep ${corpusname} | wc -l)
