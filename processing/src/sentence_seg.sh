@@ -16,6 +16,6 @@ echo "SLURM_ARRAY_JOB_ID: $SLURM_ARRAY_JOB_ID"
 path2corpus=$1
 new_corpus=$2
 srcdir=$3
-python $srcdir/sentence_segment.py --fname ${path2corpus}_${SLURM_ARRAY_TASK_ID} > ${new_corpus}_${SLURM_ARRAY_TASK_ID}_a
+python $srcdir/sentence_seg.py --fname ${path2corpus}_${SLURM_ARRAY_TASK_ID} > ${new_corpus}_${SLURM_ARRAY_TASK_ID}_a
 awk NF ${new_corpus}_${SLURM_ARRAY_TASK_ID}_a > ${new_corpus}_${SLURM_ARRAY_TASK_ID}
 rm ${new_corpus}_${SLURM_ARRAY_TASK_ID}_a
