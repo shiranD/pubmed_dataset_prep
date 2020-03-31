@@ -20,6 +20,7 @@ The follwoing steps take place:
 * [SciSpacy](https://allenai.github.io/scispacy/)
 * [Spacy](https://spacy.io)
 * SciSpacy's Medical tagger w/ ```pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.2.0/en_core_sci_md-0.2.0.tar.gz```
+* ```pip install ftfy``` fixes text for you
 * slurm (is reccomended as it was built for parallel processing suitable for slurm)
 
 
