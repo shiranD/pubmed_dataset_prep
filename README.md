@@ -1,4 +1,4 @@
-# pubmed_xml2folds
+# pubmed_dataset_prep from xmls to folds ready for training
 This repo extract punned xml's data process and prepares them for folds to run your cross validation experiment
 
 The follwoing steps take place:
